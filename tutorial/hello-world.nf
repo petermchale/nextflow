@@ -1,5 +1,8 @@
 #!/usr/bin/env nextflow
 
+// https://www.nextflow.io/docs/latest/getstarted.html#your-first-script
+// nextflow run hello-world.nf --str 'Bonjour le monde'
+
 params.str = 'Hello world!'
 
 process splitLetters {
@@ -15,13 +18,13 @@ process splitLetters {
 process convertToUpper {
 
     input:
-    file x from letters
+    file x from letters.flatten() 
 
     output:
     stdout result
 
     """
-    rev $x
+    cat $x | tr '[a-z]' '[A-Z]'
     """
 }
 
