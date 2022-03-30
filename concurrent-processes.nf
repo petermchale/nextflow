@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl=2
 
-// run as: nextflow run -resume main.nf --cores 12 --depths 0,6,8,10,12
+// run as: nextflow run -resume concurrent-processes.nf --cores 12 --depths 0,6,8,10,12
 
 params.depths = false
 if (!params.depths) {
@@ -12,7 +12,6 @@ if (!params.depths) {
 // --depths 2,4,6,8
 idepths = params.depths.split(",").collect { it -> it.toInteger() }
 depths = Channel.from(idepths)
-
 
 quals = Channel.fromList([5,10,20])
 cohorts = Channel.from("AAA", "BBB")

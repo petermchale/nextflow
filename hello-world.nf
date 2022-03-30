@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 // https://www.nextflow.io/docs/latest/getstarted.html#your-first-script
-// nextflow run hello-world.nf --str 'Bonjour le monde' -resume -with-dag flowchart.png
+// nextflow run hello-world.nf --str 'Bonjour le monde' -resume -with-dag hello-world.png
 
 params.str = 'Hello world!'
 
