@@ -17,9 +17,7 @@ nextflow run example1.nf
 ```
 
 ```
-# example 2
-
-(nextflow) uh202773:nextflow petermchale$ nextflow run example2.nf
+$ nextflow run example2.nf
 N E X T F L O W  ~  version 21.10.6
 Launching `example2.nf` [naughty_galileo] - revision: fc548246b0
 executing perl task...
