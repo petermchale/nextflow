@@ -8,4 +8,6 @@ conda install nextflow
 
 ## Basic workflows
 
+```
 nextflow run hello-world.nf --str 'Bonjour le monde' -resume -with-dag hello-world.png
+```
