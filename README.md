@@ -11,9 +11,25 @@ conda install nextflow
 ```
 # hello-world example
 nextflow run hello-world.nf --str 'Bonjour le monde' -resume -with-dag hello-world.png
+```
+```
+$ nextflow run example1.nf
+N E X T F L O W  ~  version 21.10.6
+Launching `example1.nf` [mighty_khorana] - revision: bbdc7173ab
+fasta file: /Users/petermchale/nextflow/sample.fa
+> chrX
+ACGT
+> chrY
+TGCA
 
-# example 1
-nextflow run example1.nf
+executor >  local (2)
+[5b/61b5e7] process > splitSequences [100%] 1 of 1 ✔
+[53/19ff49] process > reverse        [100%] 1 of 1 ✔
+fasta file after reversal:
+ Xrhc >
+TGCA
+Yrhc >
+ACGT
 ```
 
 ```
