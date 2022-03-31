@@ -64,4 +64,6 @@ executor >  local (2)
 [d0/bfa16e] process > create_hello [100%] 1 of 1 ✔
 [6f/b4fd8f] process > add_world    [100%] 1 of 1 ✔
 /Users/petermchale/nextflow/work/6f/b4fd8f3767d1fa7c074cb2d80b7cca/hello-world.txt
+$ cat /Users/petermchale/nextflow/work/6f/b4fd8f3767d1fa7c074cb2d80b7cca/hello-world.txt
+bonjour le monde
 ```
