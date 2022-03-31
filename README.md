@@ -55,3 +55,13 @@ executor >  local (2)
 executing python task...
 average of two columns of random numbers: 56.057181947976595 , 56.01691280640473
 ```
+
+```
+$ nextflow run dsl2.nf
+N E X T F L O W  ~  version 21.10.6
+Launching `dsl2.nf` [sleepy_plateau] - revision: 563de591f5
+executor >  local (2)
+[d0/bfa16e] process > create_hello [100%] 1 of 1 ✔
+[6f/b4fd8f] process > add_world    [100%] 1 of 1 ✔
+/Users/petermchale/nextflow/work/6f/b4fd8f3767d1fa7c074cb2d80b7cca/hello-world.txt
+```
