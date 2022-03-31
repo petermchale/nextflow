@@ -9,9 +9,21 @@ conda install nextflow
 ## Basic workflows
 
 ```
-# hello-world example
-nextflow run hello-world.nf --str 'Bonjour le monde' -resume -with-dag hello-world.png
+$ nextflow run hello-world.nf --str 'Bonjour le monde' -resume -with-dag hello-world.png
+N E X T F L O W  ~  version 21.10.6
+Launching `hello-world.nf` [angry_khorana] - revision: b6b98c0d81
+Thu Mar 31 12:15:41 MDT 2022
+You lost.
+81
+[1, 4, 9, 16]
+executor >  local (4)
+[d5/f4dca9] process > splitLetters       [100%] 1 of 1 ✔
+[d1/49299c] process > convertToUpper (3) [100%] 3 of 3 ✔
+BONJOU
+R LE M
+ONDE
 ```
+
 ```
 $ nextflow run example1.nf
 N E X T F L O W  ~  version 21.10.6
