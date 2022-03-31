@@ -34,6 +34,7 @@ process splitLetters {
 process convertToUpper {
 
     input:
+    // https://www.nextflow.io/docs/latest/operator.html#flatten
     file x from letters.flatten() 
 
     output:
